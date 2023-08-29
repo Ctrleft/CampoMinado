@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #222831;
+  margin: 0;
+  height: 100vh;
+}
+
+h1 {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+.emailArea {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+}
+
+.emailArea label {
+  display: block;
+  margin-bottom: 6px;
+  color: whitesmoke;
+}
+
+.emailArea input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 15px;
+  width: 300px;
+  height: 39px;
+  margin-right: 20px;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+  color: whitesmoke;
+}
+
+.emailArea input::placeholder {
+  text-align: right;
+  padding-right: 85%;
+  border-bottom: none;
+  transition: border-color 0.3s;
+}
+
+.emailArea input:focus,
+.userArea input:focus,
+.passArea input:focus {
+  color: whitesmoke; 
+  font-size: 17px; 
+}
+
+.emailArea input:hover,
+.emailArea input:focus {
+  border-color: #ffcbdb;
+}
+
+.emailArea .input-container {
+  position: relative;
+}
+
+.emailArea .gradient-input {
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  padding-bottom: 5px;
+  width: 300px;
+}
+
+.emailArea .progress-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #f1f1f1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.emailArea .progress {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, #dba640, #c4a253); 
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+  
+.userArea {
+  position: absolute;
+  top: 275px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+}
+
+.userArea label {
+  display: block;
+  margin-bottom: 6px;
+  color: whitesmoke;
+}
+
+.userArea input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  width: 300px;
+  height: 39px;
+  margin-right: 20px;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+  color: whitesmoke;
+}
+
+.userArea input::placeholder {
+  text-align: right;
+  padding-right: 83.5%;
+  border-bottom: none;
+  transition: border-color 0.3s;
+}
+
+.userArea input:hover,
+.userArea input:focus {
+  border-color: #ffcbdb;
+}
+
+.userArea .input-container {
+  position: relative;
+}
+
+.userArea .gradient-input {
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  padding-bottom: 5px;
+  width: 300px;
+}
+
+.userArea .progress-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #f1f1f1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.userArea .progress {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, #dba640, #c4a253); 
+}
+
+.passArea {
+  position: absolute;
+  top: 380px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+}
+
+.passArea label {
+  display: block;
+  margin-bottom: 6px;
+  color: whitesmoke;
+}
+
+.passArea input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  width: 300px;
+  height: 39px;
+  margin-right: 20px;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+  color: whitesmoke;
+}
+
+.passArea input::placeholder {
+  text-align: right;
+  padding-right: 83.5%;
+  border-bottom: none;
+  transition: border-color 0.3s;
+}
+
+.passArea input:hover,
+.passArea input:focus {
+  border-color: #ffcbdb;
+}
+
+.passArea .input-container {
+  position: relative;
+}
+
+.passArea .gradient-input {
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  padding-bottom: 5px;
+  width: 300px;
+}
+
+.passArea .progress-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #f1f1f1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.passArea .progress {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, #dba640, #c4a253); 
+}
+
+ion-icon {
+  color: white;
+  margin-left: 5px;
+}
+
+.remember-password {
+  display: flex;
+  align-items: center;
+  margin-top: 15px; 
+  margin-left: 10px;
+}
+
+.remember-password input[type="checkbox"] {
+  margin-right: 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.remember-password input[type="checkbox"]:checked {
+  border-color: #FFD369;
+  background-color: #FFD369;
+}
+
+.remember-password label {
+  color: whitesmoke;
+  font-size: 17px;
+  margin-left: 4px;
+  margin-top: 6.5px;
+}
+
+.buttonStyle {
+  position: absolute;
+  top: 545px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buttonStyle button {
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  height: 45px;
+  width: 250px;
+  cursor: pointer;
+  background-color: #FFD369;
+  transition: background-image 0.5s;
+}
+
+.buttonStyle button:hover {
+  background-color: #cfab56;
+}
+
+.forgotPassword nav a{
+  position: absolute;
+  top: 688px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FFD369;
+  text-decoration: none;
+}
+
+.withoutAccount {
+  color: #918468;
+  position: absolute;
+  top: 640px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.createAccount {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #FFD369;
+}
+
+.loginBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 95%;
+  width: 40%;
+  max-width: 550px;
+  background-color: #393E46;
+  border: 1px solid #222831;
+  border-radius: 29px;
+  z-index: -1;
+  margin: 0 auto;
+}

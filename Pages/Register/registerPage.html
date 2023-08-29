@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem Vindo</h1>
+        <div class="emailArea">
+            <label for="email" class="emailText">Email</label>
+            <div class="input-container">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" id="email" placeholder="Email" class="gradient-input" required>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="userArea">
+            <label for="user">Usuário</label>
+            <div class="input-container">
+                <ion-icon name='person-outline'></ion-icon>
+                <input type="text" id="user" placeholder="Usuário" class="gradient-input" required>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="passArea">
+            <label for="password">Senha</label>
+            <div class="input-container">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" id="password" placeholder="Senha" class="gradient-input" required>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="remember-password">
+                <input type="checkbox" id="rememberPassword" class="checkboxStyle">
+                <label for="rememberPassword">Mantenha-se logado</label>
+            </div>
+        </div>
+        
+        
+
+        <div class="buttonStyle">
+            <button onclick="redirectToLoginPage()">Entrar</button>
+        </div>
+
+        <p class="withoutAccount">Já tem uma conta? <a class="createAccount" href="../Login/loginPage.html">Entrar</a></p>
+
+        <div class="loginBox"></div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>    
+    <script src="register.js"></script>
+</body>
+</html>

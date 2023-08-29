@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu-bar {
+    background-color: rgb(43, 45, 97);
+    width: 100%;
+    padding: 12px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.Menu-bar h1 {
+    color: #fff; 
+    font-size: 23px;
+}
+
+.Menu-bar h2 {
+    color: #fff; 
+    font-size: 23px; 
+    margin-left: 150px; 
+}
+
+.navigation {
+    display: flex; 
+    align-items: center; 
+    font-size: 18px; 
+}
+
+.home {
+    color: whitesmoke;
+}
+
+.about {
+    color: whitesmoke;
+}
+
+.games {
+    color: rgb(207, 205, 201);
+}
+
+.navigation a {
+    text-decoration: none;
+    margin-left: 60px;
+    position: relative;
+}
+
+.navigation a:hover {
+    color: rgb(207, 205, 201);
+}
+
+.navigation a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #c2bfbf;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navigation a:hover::before {
+    transform: scaleX(1);
+}
+.btn_style {
+    padding: 5.4px 23px;
+    color: #252020;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 55px;
+    margin-right: 50px;
+}
+
+#loginP {
+    margin-right: 0;
+}
+
+#registerP {
+    margin-left: 25px;
+    width: 134px;
+}
+
+.btn_style:hover {
+    background-color: rgb(190, 190, 235);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 160px;
+    right: 100%;
+}
+
+.container .gameBox {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: rgb(43, 45, 97);
+    margin: 30px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.container .gameBox:hover{
+    height: 450px;
+}
+
+.container .gameBox .imgBox {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    /* background-color: blue; */
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .gameBox .imgBox img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+.container .gameBox .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    /* opacity: 0; */
+    /* transition: 0.2s ease-in-out; */
+}
+
+.container .gameBox .content h3 {
+    font-size: 25px;
+    visibility: visible;
+    opacity: 1;
+    margin-top: 85px; 
+    margin-left: 16px;
+    /* text-align: center;  */
+    /* transform: translateX(-10px);  */
+    cursor: default;
+    color: whitesmoke;
+}
+
+.container .gameBox .content p {
+    margin-top: 10px; 
+    cursor: default;
+    color: whitesmoke;
+}
+
+.container .gameBox:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -140px;
+    transition-delay: 0.2s;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.buttonDi {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #252020;
+    margin-top: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buttonDi:not(:last-child) {
+    margin-right: 0px;
+    margin-left: 33px;
+}
+
+.buttonDi:not(:first-child) {
+    margin-left: 20px;
+}
+
+.buttonDi:hover {
+    background-color: rgb(190, 190, 235);
+}

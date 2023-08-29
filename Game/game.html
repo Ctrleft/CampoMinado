@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Campo Minado</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300">
+</head>
+<body>
+    <div class="sidebar" oncontextmenu="return false;">
+        <ul>
+            <li>
+                <a href="/Pages/Home Page/home/index.html">
+                    <i class="fa fa-home icon"></i>
+                    <span class="menuItem">Início</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="helpIcon">
+                    <i class="fa fa-question-circle icon"></i>
+                    <span class="menuItem">Ajuda</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="settingsIcon">
+                    <i class="fa fa-gear icon"></i>
+                    <span class="menuItem">Configurações</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+
+    <div class="menuBox helpBox">
+    <div class="closeBtn">
+        <div class="helpBoxItem">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="configMessage">
+        <p class="ruleP">Regras:</p>
+        <ul>
+            <li>Cada célula pode estar em um de três estados: oculta, revelada ou marcada.</li>
+            <li>Para revelar uma célula, clique nela.</li>
+            <li>Para colocar uma bandeira, clique com o botão esquerdo.</li>
+            <li>Se uma célula revelada contiver um número, ele indica quantas minas estão adjacentes a essa célula.</li>
+            <li>Se uma célula não revelada for clicada e conter uma mina, o jogo termina e você perde.</li>
+            <li>Se todas as células sem minas forem reveladas, você vence.</li>
+          </ul>
+    </div>
+</div>
+
+<div class="menuBox configBox">
+    <div class="closeBtn">
+        <div class="configBoxItem">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+    
+    <div class="container" oncontextmenu="return false;">
+        <div class="game-info">
+            <div id="gameTime"><span>Tempo:</span> 00:00</div>
+            <div id="gameScore"><strong> Pontos:</strong> 000</div>
+        </div>        
+        <div id="mineSweeper"></div>
+        <div class="downBlock" oncontextmenu="return false;">
+            <button id="restartButton" class="button" onclick="resetBtn()">Reiniciar</button>
+        </div>              
+    </div> 
+
+    <script src="game.js"></script>
+</body>
+</html>

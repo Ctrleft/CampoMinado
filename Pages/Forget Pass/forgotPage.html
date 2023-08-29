@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="forgotPage.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Recuperar Senha</h1>
+        <div class="emailArea">
+            <label for="email" class="emailText">Email</label>
+            <div class="input-container">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" id="email" placeholder="Email" class="gradient-input" required>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttonStyle">
+            <button onclick="redirectToGame()">Enviar</button>
+        </div>
+        <a href="/Pages/Login/loginPage.html" class="return">Voltar</a>
+
+
+    <div class="loginBox"></div>
+
+
+    <script src="forgotPage.js"></script>
+</body>
+</html>
